@@ -1,5 +1,13 @@
 <?php
 
+//this process connects to the EbayAPi with GetCategoryInfo method.
+//and get the categories info to store the custom post type products category.
+//so you can list your products by the ebay category on your wordpress.
+//this process use an aux table calls parms_ebay_wc wich contains all the father ebay categories.
+//this code goes into the functions.php!
+
+
+
 //category tasks
 add_action('loadCategories', 'loadCategories');
 function loadCategories() {
